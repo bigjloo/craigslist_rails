@@ -1,0 +1,9 @@
+have list of categories for user to choose from.
+each category has a list of posts
+
+user can create new post which will produce a unique key that only the creator will have to update/delete post
+
+<%= form_for @category, url: {action: "update" }, html: { class: "updatePost" } do |f| %>
+  <%= f.text_field :key %>
+  <%= f.submit "Update Posts!" %>
+<% end %>
